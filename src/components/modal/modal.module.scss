@@ -1,0 +1,40 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors.scss";
+@import "../../styles/mixin.scss";
+
+.modalWrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 250000;
+  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: auto !important;
+  .modalContentWrapper {
+    position: relative;
+    // overflow-y: auto;
+    max-width: 60vw;
+    max-height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    &::-webkit-scrollbar:vertical {
+      display: none;
+    }
+  }
+}
+
+.showCrossCSS {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  img {
+    position: relative !important;
+  }
+}

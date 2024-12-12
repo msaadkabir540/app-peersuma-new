@@ -1,0 +1,117 @@
+.DatePicker {
+    border: 1px solid var(--Stroke-Stroke-D, #b8b8b8) !important;
+    border-radius: var(--radius-input-button-radius, 5px) !important;
+
+    width: 100% !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+    &:focus-visible {
+        border: none !important;
+    }
+}
+
+.classForMobileScreen {
+    @media (max-width: 660px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+    }
+}
+
+.inventorySelectionBox {
+    @media (max-width: 660px) {
+        margin-bottom: 10px;
+    }
+}
+
+.modalContentWrapper {
+    max-width: 550px !important;
+
+    @media (max-width: 660px) {
+        max-width: 90vw !important;
+
+    }
+}
+
+.labelClassInput {
+    font-size: 16px !important;
+
+}
+
+.modalAlert {
+    max-width: 660px !important;
+
+    @media (max-width: 660px) {
+        max-width: 90vw !important;
+
+    }
+}
+
+
+.customCircle>div:first-of-type {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+}
+
+.loaderClassAssigned {
+    width: 50px !important;
+    height: 50px !important;
+
+}
+
+.borderRed {
+    border: 1px solid #ED1C24 !important;
+
+    @media (max-width: 500px) {
+        max-width: none !important;
+    }
+}
+
+.heightLoadingClass {
+    height: 525px !important;
+}
+
+
+.inputCss::placeholder {
+    @media (max-width: 500px) {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: #a1a1a1 !important;
+    }
+}
+
+
+.customCheckbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border-radius: 2px;
+    /* rounded-md */
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #000000;
+}
+
+.customCheckbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 14px;
+    height: 8px;
+    z-index: 33;
+    border: solid white;
+    border-width: 0px 0px 3px 3px;
+    transform: rotate(-46deg);
+}
+
+.customCheckbox:checked {
+    background-color: #000000;
+}

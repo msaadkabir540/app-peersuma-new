@@ -1,0 +1,53 @@
+.avatarContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  .avatar {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -1px 1px 7px -4px black;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1);
+      cursor: pointer;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+      object-fit: inherit;
+      @media (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    @media (max-width: 480px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.signUpBtn {
+  border-radius: 10px !important;
+  width: 100%;
+  max-width: 102px !important;
+  min-width: 102px !important;
+}
+.inputVideoViewClass {
+  border-radius: 10px !important;
+  border: 1px solid #b8b8b8 !important;
+  background: #fff !important;
+  @media (max-width: 480px) {
+    border-radius: 5px !important;
+    padding: 3px 0px 3px 30px !important;
+  }
+}
+.videoSearchIcon {
+  @media (max-width: 480px) {
+    top: 23px !important;
+  }
+}

@@ -1,0 +1,31 @@
+.width100 {
+    @media (max-width:500px) {
+        width: 100%;
+    }
+}
+
+.loadingClass {
+    width: 30px !important;
+    height: 30px !important;
+    border-top: 3px solid #ed1c24 !important;
+    border-left: 3px solid #ed1c24 !important;
+    border-bottom: 3px solid #ed1c24 !important;
+}
+
+.iconClass {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.btnPadding {
+    padding: 5px 20px !important;
+
+    @media (max-width: 500px) {
+        padding: 0px !important;
+
+    }
+}
+
+.seletionClassName {
+    min-width: 150px !important;
+}

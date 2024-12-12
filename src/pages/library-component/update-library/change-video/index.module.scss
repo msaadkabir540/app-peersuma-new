@@ -1,0 +1,38 @@
+.UpdateVideoClass {
+  border-radius: 10px;
+  border: 1px solid #B8B8B8;
+  background: #F8F8F8;
+  padding: var(--N10, 10px);
+
+  .dropVideoContainer {
+    border-radius: var(--N10, 10px);
+    border: 1px dashed var(--Stroke-Stroke-D, #B8B8B8);
+    background: var(--Background-BG-2, #FFF);
+    display: flex;
+    min-width: 280px;
+    color: #A1A1A1;
+    padding: var(--N20, 20px);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--N10, 10px);
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+
+  .inputCustom {
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+
+    &::placeholder {
+      @media (max-width: 500px) {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: #a1a1a1 !important;
+      }
+    }
+  }
+}

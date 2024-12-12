@@ -1,0 +1,45 @@
+.tabContainer {
+  gap: 8px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #ececec;
+  justify-content: space-between;
+
+
+
+  .tab {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    padding: 11px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #fff;
+
+    display: flex;
+
+    height: 40px;
+    padding: 11px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: 1024px) {
+      padding: 11px 7px;
+      font-size: 13px;
+    }
+  }
+
+  .tabActive {
+    background: var(--Background-BG-3, #ed1c24);
+
+    span {
+      color: #ececec;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.your-selector__menu {
+  z-index: 3 !important;
+}
+
+.your-selector__menu-list {
+  &::-webkit-scrollbar {
+    width: 5px !important;
+    /* Remove scrollbar space */
+    background: #e6e7e8;
+    /* Optional: just make scrollbar invisible */
+    height: 5px !important;
+    border-radius: 8px;
+  }
+
+  /* Optional: show position indicator in red */
+  &::-webkit-scrollbar-thumb {
+    background: #c7c8ca;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 5px;
+    /* Remove scrollbar space */
+    background: #e6e7e8;
+    /* Optional: just make scrollbar invisible */
+    height: 5px;
+    border-radius: 8px;
+    display: block !important;
+  }
+}

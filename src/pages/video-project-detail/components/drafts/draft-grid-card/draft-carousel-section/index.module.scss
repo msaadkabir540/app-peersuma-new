@@ -1,0 +1,115 @@
+.main {
+    width: 100%;
+
+
+}
+
+.iconClass {
+    width: 24px !important;
+    height: 24px !important;
+
+    @media (max-width: 500px) {
+        width: 22px !important;
+        height: 22px !important;
+    }
+}
+
+.iconClass2 {
+    width: 28px !important;
+    height: 28px !important;
+    transform: rotate(90deg);
+
+    @media (max-width: 500px) {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+.loaderClass {
+    width: 18px !important;
+    height: 18px !important;
+
+
+    @media (max-width: 500px) {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+.SliderMain {
+    display: block;
+    position: relative;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+
+    .btnLeft {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        margin: 0px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -15px;
+        z-index: 2;
+        opacity: 0.9;
+        top: 45%;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .btnRight {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        margin: 0px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        right: -15px;
+        opacity: 0.9;
+        top: 45%;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.modalContentWrapper {
+    width: 500px !important;
+
+    @media (max-width: 500px) {
+        width: 90vw !important;
+        max-width: 90vw !important;
+    }
+}
+
+.mobileClass {
+    display: none;
+
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+.btnCreateClassText {
+    color: #ed1c24 !important;
+}
+
+.btnClass {
+    color: black;
+    background-color: white !important;
+    border: 1px solid #ed1c24 !important;
+}

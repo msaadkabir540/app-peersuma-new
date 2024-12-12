@@ -1,0 +1,78 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.inputContainer {
+  width: 100%;
+
+  .input {
+    border-radius: var(--radius-input-button-radius, 5px);
+    border: 1px solid var(--Stroke-Stroke-D, #b8b8b8);
+  }
+
+  label {
+    font-weight: 600 !important;
+    @include font24;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: $black;
+    margin-bottom: 4px;
+
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 11px;
+  }
+
+  .icon1 {
+    width: 15.256px;
+    height: 15.99px;
+    margin-right: 8px;
+    cursor: pointer;
+    position: absolute !important;
+    left: 12px;
+    top: 12px;
+  }
+
+  .iconCross {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    position: absolute !important;
+    right: 5px;
+    top: 12px;
+  }
+}
+
+.date {
+  position: absolute;
+  right: 12px;
+  top: 7px;
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  @include font12;
+  margin-left: 1px;
+  margin-top: 0px;
+  color: #ff5050;
+}
+
+.errorBorder {
+  border-bottom: "1px solid #ff5050" !important;
+}
+
+.input::placeholder {
+  @media (max-width: 500px) {
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    color: #a1a1a1 !important;
+  }
+}

@@ -1,0 +1,139 @@
+.updateMediaContainer {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 43% 57%;
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
+
+  .maxWidth {
+    max-width: fit-content !important;
+  }
+
+  .switchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0px;
+  }
+}
+
+.labelCustom {
+  label {
+    color: var(--Fonts-Font-B, #0f0f0f) !important;
+    font-size: var(--Sizes-font16, 16px) !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+  }
+}
+
+.changeVideoClass {
+  display: flex;
+  padding: var(--N10, 10px);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--N5, 5px);
+  border: 1px solid var(--Stroke-Stroke-B, #0f0f0f);
+  gap: var(--N10, 10px);
+  align-self: stretch;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.labelClass {
+  color: var(--Fonts-Font-B, #0f0f0f) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: normal !important;
+}
+
+.iconCustomClass {
+  top: 30px !important;
+}
+
+.imageCustomClass {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+
+.transloaditBackground {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 25001001 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 6px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 17px;
+      left: 2px;
+      top: 3px;
+      background-color: white;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+    }
+  }
+
+  input:checked+.slider {
+    background-color: #ed1c24;
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px #ed1c24;
+  }
+
+  input:checked+.slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    left: 13px;
+    transition: all 0.4s;
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}

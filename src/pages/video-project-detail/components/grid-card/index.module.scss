@@ -1,0 +1,146 @@
+.input {
+  width: 100%;
+}
+
+.btnClass {
+  background-color: transparent !important;
+}
+
+.iconClass {
+  width: 20px !important;
+  height: 20px !important;
+
+  @media (max-width: 630px) {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
+.loaderClass {
+  height: 20px;
+  width: 20px !important;
+  border-top: 2px solid #ed1c24;
+  border-left: 2px solid #ed1c24;
+  border-bottom: 2px solid #ed1c24;
+
+}
+
+.cardImage {
+  img {
+    object-fit: contain;
+    background-color: #f2f2f2;
+    width: 100% !important;
+    height: 226px !important;
+  }
+
+  @media (max-width: 630px) {
+    img {
+      height: 165.908px !important;
+      flex-shrink: 0;
+      align-self: stretch;
+    }
+  }
+}
+
+.headingText {
+  overflow: hidden;
+  color: #0f0f0f;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+.updatedText {
+  @media (max-width: 500px) {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.date {
+  @media (max-width: 500px) {
+    font-size: 9px;
+    font-weight: 400;
+  }
+}
+
+.cardsBody {
+  position: relative;
+  padding: 15px 25px;
+  border-radius: 20px;
+  width: 100%;
+  // height: 100%;
+  // max-height: 340px;
+  // min-height: 255px;
+  background-color: #f8f8f8;
+
+  @media (max-width: 500px) {
+    display: flex;
+    // max-height: 255px;
+    // min-height: 255px;
+
+    padding: 10px 15px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 15px;
+    border: 0.734px solid #b8b8b8;
+    background: #fff;
+  }
+}
+
+.duration {
+  position: absolute;
+  border-radius: 15px;
+  background: #7a6565;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  padding: 5px 8px;
+  gap: 5.37px;
+}
+
+.playButtonClass {
+  display: flex;
+  padding: 3.909px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+  img {
+    object-fit: cover;
+    padding: 0px;
+    width: 100% !important;
+    height: 13px !important;
+  }
+}
+
+.list {
+  margin: 10px;
+  bottom: 0px;
+  right: 46px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  max-width: fit-content;
+  max-width: fit-content;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  ul {
+    li {
+      padding: 10px;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}

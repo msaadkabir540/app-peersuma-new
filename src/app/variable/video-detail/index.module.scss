@@ -1,0 +1,57 @@
+.thumbnailContainer {
+  position: relative;
+  padding-left: 10px;
+  border-radius: 10px;
+  text-align: left !important;
+  @media (max-width: 600px) {
+    max-width: 360px;
+    min-width: 360px;
+  }
+
+  img {
+    height: 25px;
+  }
+
+  .thumbnailZoom {
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 60px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: slide-down 0.5s ease-in-out forwards;
+    img {
+      height: 200px;
+    }
+  }
+
+  &:hover .thumbnailZoom {
+    display: block;
+  }
+}
+
+.text {
+  overflow: hidden;
+  color: #0f0f0f;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer !important;
+
+  @media (max-width: 635px) {
+    font-size: 12px;
+    flex: 1;
+  }
+}
+
+.videoListTable {
+  @media (max-width: 635px) {
+    max-width: 216px;
+    min-width: 210px;
+  }
+}

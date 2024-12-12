@@ -1,0 +1,193 @@
+.btnClassName {
+  border: 1px solid #0f0f0f !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+.menuCustomClass {
+  right: 100px;
+  margin-top: 10px;
+}
+
+.searchIconCustomClass {
+  top: 13px !important;
+}
+
+.inputSearch {
+  width: 100%;
+
+  &:focus {
+    outline: none !important;
+    border-radius: 5px;
+    border: 1px solid #ed1c24;
+    background: #fff;
+    box-shadow: 0px 0px 6px 0px #ed1c24;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.inputSearchContainer {
+  width: 300px !important;
+
+  @media (max-width: 480px) {
+    width: 100% !important;
+  }
+}
+
+.customTableClassUser {
+  @media(max-width: 1100px) {
+    width: max-content !important;
+  }
+}
+
+.customWidth {
+  @media (max-width: 480px) {
+    width: 100% !important;
+  }
+}
+
+.activeTab {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+  opacity: 1;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+
+  label {
+    color: #0f0f0f;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .double {
+    display: flex;
+    gap: 15px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.selectClass {
+  width: 443px;
+
+  .roleContainer {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cell {
+  display: flex;
+  cursor: pointer;
+  min-width: 70px;
+  padding: var(--N5, 5px) var(--N10, 10px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--N5, 5px);
+  border: 1px solid var(--Stroke-Stroke-D, #b8b8b8);
+}
+
+.selectedDiv {
+  border-radius: var(--N5, 5px);
+  border: 1px solid var(--Stroke-Stroke-A, #ed1c24);
+  background: rgba(237, 28, 36, 0.1);
+}
+
+.disableClass {
+  input {
+    border-radius: 5px;
+    border: 1px solid #b8b8b8;
+    background: #f2f2f2;
+  }
+}
+
+.tooltipHidden {
+  display: none !important;
+}
+
+.tooltipDisable {
+  top: -21px !important;
+  right: 50% !important;
+}
+
+.bodyModal {
+  max-width: 320px !important;
+  padding: 20px !important;
+}
+
+.opacityModal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tryNowModal {
+  max-width: 627px !important;
+}
+
+.deleteModal {
+  text-align: center;
+
+  .deleteHeading {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+.maxWidth {
+  max-width: none !important;
+}
+
+.errorMessageRole {
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  margin-left: 1px;
+  margin-top: 0px;
+  color: #ff5050;
+}
+
+.headingClassNameUser {
+
+  @media (max-width: 635px) {
+    width: 214px !important;
+  }
+
+}

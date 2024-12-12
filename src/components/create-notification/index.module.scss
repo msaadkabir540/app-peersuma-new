@@ -1,0 +1,73 @@
+.notificationContainer {
+  display: flex;
+}
+
+.iconClass {
+  //   margin-top: -6px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -7px;
+
+  svg {
+    font-weight: bold !important;
+  }
+
+  @media (max-width: 485px) {
+    margin-top: -3px;
+    font-size: 18px;
+  }
+}
+
+.toasterContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9px;
+  z-index: 40000000;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (max-width: 485px) {
+      gap: 2px;
+    }
+  }
+
+  .description {
+    color: #0f0f0f;
+    font-weight: 400;
+
+    @media (max-width: 485px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.message {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 485px) {
+    font-size: 15px;
+  }
+}
+
+.success {
+  color: #0ac433;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.info {
+  color: #3498db;
+}
+
+.warn {
+  color: #eed202;
+}

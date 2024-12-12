@@ -1,0 +1,184 @@
+@import "./_breakpoints.scss";
+
+@mixin gridOne($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $md) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridTwo($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $md) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $gap_y + px $gap_x + px;
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridThree($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridFour($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+
+  @media (max-width: $md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xxs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridFive($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+
+  @media (max-width: $md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $xxs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $extra-small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridSix($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $xlg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xxs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin font80 {
+  font-weight: 600;
+  font-size: calc(40px + (140 - 40) * (100vw - 280px) / (2560 - 280));
+}
+@mixin font65 {
+  font-weight: 700;
+  font-size: calc(28px + (65 - 28) * (100vw - 280px) / (2560 - 280));
+}
+@mixin font50 {
+  font-weight: 700;
+  font-size: calc(22px + (50 - 22) * (100vw - 280px) / (2560 - 280));
+}
+@mixin font46 {
+  font-weight: 700;
+  font-size: calc(19px + (46 - 19) * (100vw - 280px) / (2560 - 280));
+}
+@mixin font40 {
+  font-weight: 700;
+  font-size: calc(17px + (37 - 17) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font36 {
+  font-weight: 600;
+  font-size: calc(16px + (32 - 16) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font32 {
+  font-weight: 500;
+  font-size: calc(15px + (29 - 15) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font29 {
+  font-weight: 400;
+  font-size: calc(15px + (25 - 15) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font24 {
+  font-weight: 500;
+  font-size: calc(14px + (21 - 14) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font20 {
+  font-weight: 500;
+  font-size: calc(13px + (18 - 13) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font18 {
+  font-weight: 500;
+  font-size: calc(13px + (16 - 13) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font16 {
+  font-weight: 500;
+  font-size: calc(13px + (15 - 13) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font14 {
+  font-weight: 500;
+  font-size: calc(12px + (14 - 12) * (100vw - 280px) / (2560 - 280));
+}
+@mixin font12 {
+  font-weight: 500;
+  font-size: calc(10px + (12 - 10) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font10 {
+  font-weight: 500;
+  font-size: calc(8px + (10 - 8) * (100vw - 280px) / (2560 - 280));
+}

@@ -1,0 +1,403 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  margin: 0px !important;
+  padding: 0px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.uppy-Dashboard-browse {
+  color: #ed1c24 !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="range"] {
+  outline: none;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: #e6e7e8;
+  /* Optional: just make scrollbar invisible */
+  height: 0px;
+  border-radius: 8px;
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: #f3f3f3;
+  /* Optional: just make scrollbar invisible */
+  height: 0px;
+  border-radius: 8px;
+  /* display: none !important; */
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::after {
+  left: -20px !important;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+  left: -20px !important;
+}
+
+.react-datepicker {
+  display: flex !important;
+}
+
+.slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-list {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+
+.slick-slide>div:first-child {
+  width: auto;
+  margin-right: 10px;
+}
+
+.slick-dots {
+  position: relative !important;
+  bottom: 0px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin-top: 10px !important;
+}
+
+.slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+  padding: 0px !important;
+  background: #00000030 !important;
+  border-radius: 12px !important;
+  margin-right: 0px !important;
+}
+
+
+.slick-dots .slick-active button {
+  background: #000000 !important;
+}
+
+.slick-dots li {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  background: #000000 !important;
+}
+
+.slick-dots li button:before {
+  display: none !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  width: 15px;
+  padding: 0px;
+  appearance: none;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.css-13cymwt-control {
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border: 1px solid #c0c0c0 !important;
+}
+
+.css-1dimb5e-singleValue {
+  color: #838383 !important;
+  @include font16;
+  font-weight: 400 !important;
+}
+
+.css-t3ipsp-control {
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border: 1px solid #c0c0c0 !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+  display: none !important;
+}
+
+.css-15lsz6c-indicatorContainer {
+  display: none !important;
+}
+
+.css-166bipr-Input {
+  color: #838383 !important;
+  @include font16;
+  font-weight: 400 !important;
+}
+
+.css-1fdsijx-ValueContainer {
+  padding: 2px 4px !important;
+}
+
+.slick-vertical .slick-slide {
+  width: 100% !important;
+}
+
+.gm-style .gm-style-iw-c {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+  padding: 0px !important;
+}
+
+.gm-style .gm-style-iw-d {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+  display: none !important;
+}
+
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+.gm-style .gm-style-iw-c {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+  padding: 0px !important;
+}
+
+.gm-style .gm-style-iw-d {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-tc::after {
+  display: none !important;
+}
+
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.react-tel-input .selected-flag .arrow {
+  border-top: 4px solid #fff !important;
+}
+
+.react-tel-input .selected-flag .arrow.up {
+  display: none !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: transparent !important;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item:hover {
+  background-color: transparent !important;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected:hover {
+  background-color: #216ba5 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.Toastify__toast-container {
+  z-index: 40000000 !important;
+}
+.Toastify__toast {
+  z-index: 40000000 !important;
+  border-radius: 5px !important;
+  top: 70px !important;
+  right: 28px !important;
+}
+.Toastify__progress-bar {
+  display: none !important;
+}
+.Toastify__toast-body {
+  align-items: flex-start !important;
+}
+.Toastify__close-button {
+  border-radius: 7px !important;
+}
+
+.Toastify__close-button svg {
+  fill: currentColor !important;
+  height: 17px !important;
+  width: 17px !important;
+}
+
+@media (max-width: 485px) {
+  .Toastify__toast-body {
+    padding: 0px !important;
+    font-size: 10px !important;
+  }
+  .Toastify__toast-icon {
+    width: 18px !important;
+  }
+  .Toastify__toast-container {
+    width: 100vw !important;
+    padding: 0 !important;
+    left: -4px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: left !important;
+    align-items: end !important;
+  }
+  .Toastify__toast {
+    border-radius: 5px !important;
+    top: 55px !important;
+    right: 0px !important;
+    margin: 3px 7px !important;
+    width: 100% !important;
+    max-width: 215px !important;
+    min-width: 215px !important;
+    height: 100% !important;
+    min-height: fit-content !important;
+    max-height: fit-content !important;
+    padding: 10px !important;
+  }
+  .Toastify__close-button {
+    stroke-width: 0.5px !important;
+    border: none !important;
+    padding: 1px !important;
+
+    margin-top: -9px;
+  }
+  .Toastify__close-button svg {
+    fill: currentColor !important;
+    height: 11px !important;
+    width: 11px !important;
+  }
+}
+
+.uppy-Dashboard-AddFiles {
+  @media (max-width: 825px) {
+    flex-direction: row !important;
+  }
+}
+
+.uppy-Dashboard-overlay {
+  display: none !important;
+}
+.uppy-Dashboard-inner {
+  box-shadow: none !important;
+  @media (max-width: 600px) {
+    height: 300px !important;
+    top: 180px !important;
+  }
+  /* span {
+    display: none !important;
+  } */
+}
+
+
+.react-datepicker__month {
+  margin: 2px !important;
+  
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  
+  line-height: 22px !important;
+}

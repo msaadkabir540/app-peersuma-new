@@ -1,0 +1,294 @@
+.imgClass {
+  @media (max-width: 630px) {
+    width: 10px !important;
+    height: 12px !important;
+  }
+}
+
+.hamburgerClass {
+  width: 55px !important;
+  height: 32px !important;
+  padding: 10px 20px !important;
+  gap: 10px !important;
+  border-radius: 20px 0px 0px 20px !important;
+  border: 1px solid #0f0f0f !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+
+  @media (max-width: 630px) {
+    padding: 7.267px 14.534px !important;
+    width: 40px !important;
+    height: 22px !important;
+  }
+}
+
+.gridClass {
+  gap: 10px !important;
+  width: 64px !important;
+  height: 32px !important;
+  border-radius: 0px 20px 20px 0px !important;
+  padding: 10px 20px !important;
+  background-color: transparent !important;
+  border: 1px solid #0f0f0f !important;
+  border-left: none !important;
+
+  @media (max-width: 630px) {
+    padding: 7.267px 14.534px !important;
+    width: 40px !important;
+    height: 22px !important;
+  }
+}
+
+.videoSelectionBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.activeViewClass {
+  background: #daeef4 !important;
+}
+
+.dateContainer {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px solid #b8b8b8;
+  background: transparent;
+  width: 100%;
+  padding-right: 50px;
+  max-width: max-content;
+  overflow: scroll;
+}
+
+.dateMenu {
+  width: 100%;
+  border-radius: 5px;
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+  background: #fff;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: stretch;
+  z-index: 9999;
+  cursor: pointer;
+  max-width: 180px;
+  min-width: 190px;
+  top: 43px;
+
+  p {
+    overflow: hidden;
+    color: #0f0f0f;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 10px;
+    width: 100%;
+
+    &:hover {
+      background: #f2f2f2;
+    }
+
+    span {
+      margin-left: 10px;
+
+      svg {}
+    }
+  }
+}
+
+.dateIcon {
+  position: absolute;
+  right: 9px;
+  top: 12px;
+  cursor: pointer;
+
+  // pointer-events: none;
+  .img {
+    width: 15px;
+    height: 14px;
+  }
+}
+
+.crossIcon {
+  position: absolute;
+  right: 28px;
+  top: 12px;
+  cursor: pointer;
+
+  .img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.dropdown {
+  left: 193px;
+  top: 200px;
+  z-index: 9999;
+  width: 100%;
+  max-width: 315px;
+  min-width: 315px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 480px) {
+    left: 0px;
+    top: 250px;
+    max-width: 290px;
+    min-width: 290px;
+  }
+
+  .customDateHeading {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #b8b8b8;
+  }
+}
+
+.customDateRange {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .dateInput {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+.applyBtn {
+  padding: var(--Paddings-P1, 5px) 10px;
+
+  width: 100% !important;
+  max-width: 80px !important;
+  background-color: #ed1c24 !important;
+
+  // border: 1px solid #ed1c24 !important;
+  @media (max-width: 630px) {
+    max-width: 60px !important;
+    min-width: 60px !important;
+    height: 28px !important;
+  }
+}
+
+.applyText {
+  color: #fff !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (max-width: 630px) {
+    color: #fff;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: normal !important;
+  }
+}
+
+.cancelBtn {
+  padding: var(--Paddings-P1, 5px) 10px;
+  width: 100% !important;
+  max-width: 80px !important;
+  background-color: transparent !important;
+  border: 1px solid #ed1c24 !important;
+
+  @media (max-width: 630px) {
+    max-width: 60px !important;
+    min-width: 60px !important;
+    height: 28px !important;
+  }
+}
+
+.cancelText {
+  color: #ed1c24 !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+
+  @media (max-width: 630px) {
+    color: #ed1c24;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+  }
+}
+
+.DatePicker {
+  border-radius: var(--Corner-Radius-CR-1, 5px) !important;
+  background: #fff5f5 !important;
+  width: 100% !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 3rem !important;
+  padding-right: 1rem !important;
+
+  &:focus-visible {
+    border: none !important;
+  }
+}
+
+.imgDate {
+  pointer-events: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 47px;
+  left: 10px;
+
+  &>div {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.imgDateTo {
+  pointer-events: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+
+  &>div {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.dateLabelClass {
+  color: var(--Fonts-Font-B, #0f0f0f);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

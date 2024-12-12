@@ -1,0 +1,86 @@
+.inputShotUrl {
+
+    border: none !important;
+    background: transparent !important;
+    padding: 0px !important;
+
+    &:focus {
+        outline: none !important;
+        border-radius: 0px !important;
+        border: none !important;
+    }
+
+    &::placeholder {
+        @media (max-width: 500px) {
+            font-size: 16px !important;
+        }
+    }
+
+    @media (max-width:500px) {
+        border: none !important;
+        background-color: transparent !important;
+        padding: 0px !important;
+        font-size: 12px;
+
+        &:focus {
+            outline: none !important;
+            border-radius: 0px !important;
+            border: none !important;
+        }
+
+        &::placeholder {
+            @media (max-width: 500px) {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+.shortUrlScss {
+    width: 100%;
+    display: flex;
+
+    @media (max-width:500px) {
+        flex-direction: column;
+    }
+}
+
+.redBorder {
+    border: 1px solid #ed1c24 !important;
+}
+
+.errorMessageUrl {
+    display: block;
+    color: #ED1C24;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.shortUrlScssOuter {
+    width: 100%;
+    display: flex;
+    padding: 8px 15px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #b8b8b8;
+    justify-content: flex-start;
+
+    @media (max-width:500px) {
+        padding: 5px;
+        border-radius: 5px;
+        align-items: flex-end;
+        flex-direction: column;
+        border: 1px solid #b8b8b8;
+        justify-content: flex-end;
+    }
+}
+
+.errorClass {
+    display: block;
+    font-weight: 500;
+    font-size: calc(10px + 2 * (100vw - 280px) / 2280);
+    margin-left: 1px;
+    margin-top: 0px;
+    color: #ff5050;
+}

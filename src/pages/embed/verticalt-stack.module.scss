@@ -1,0 +1,336 @@
+.main {
+  display: flex;
+  max-width: 1280px !important;
+  margin: 0px auto !important;
+  width: 100%;
+  flex-direction: column;
+
+  @media (max-width: 480px) {
+    gap: 0px;
+    width: auto;
+    padding: 10px 6px;
+    flex-direction: column;
+    justify-content: flex-start !important;
+  }
+
+  .rightPane {
+    padding: 20px 0px 0px 20px;
+    flex: 1;
+
+    @media (max-width: 550px) {
+      padding: 0px 10px;
+    }
+
+    .name {
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+
+    }
+
+    .video {
+      width: 100%;
+      height: 400px;
+    }
+
+    .description {
+      cursor: pointer;
+      font-size: 14px;
+      line-height: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      transition: all 1s;
+      cursor: pointer;
+
+      @media (max-width: 500px) {
+        -webkit-line-clamp: 1;
+
+      }
+
+    }
+
+    .sliderWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      height: 100px;
+      padding-bottom: 40px;
+
+      @media (max-width: 550px) {
+        justify-content: center;
+      }
+
+      .SliderMain {
+        min-width: 280px;
+        margin: 0 10px;
+        flex: 1;
+
+        @media (max-width: 700px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .btnLeft,
+    .btnRight {
+      width: 40px;
+      height: 110px;
+      display: flex;
+      margin: 0px;
+      cursor: pointer;
+      align-items: center;
+      border-radius: 3px;
+      background-color: #ffffff54;
+      justify-content: center;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+
+    .shareBox {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      margin: 10px 0px;
+
+      @media (max-width: 480px) {
+        gap: 10px;
+        margin: 0px !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+      }
+
+      .shareViewClass {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+
+      .uploadedNameClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .uploadedheadingClass {
+          font-size: 20px;
+
+          @media (max-width: 480px) {
+            font-size: 12px;
+          }
+        }
+
+        .uploadedTimeClass {
+          font-size: 14px;
+
+          @media (max-width: 480px) {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+
+        @media (max-width: 480px) {
+          font-size: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .leftDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 245px !important;
+    padding: 20px 20px 0px 0px;
+    justify-content: space-between;
+
+
+
+    @media (max-width: 480px) {
+      max-width: 100% !important;
+      padding: 5px;
+    }
+
+    .grid {
+      width: 100%;
+      display: flex;
+      padding: 0px 10px;
+      overflow-y: auto;
+      flex-direction: column;
+
+      @media (max-width: 550px) {
+        align-items: center;
+      }
+
+      &::-webkit-scrollbar {
+        width: 6px !important;
+        background: transparent !important;
+
+      }
+    }
+
+    .viewAllClass {
+      text-align: right;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 65px;
+      border-bottom: 2px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+}
+
+.widgetContainer {
+  height: 450px;
+  border-radius: 10px;
+  background-color: #333;
+
+  @media (max-width: 1025px) {
+    height: 480px;
+  }
+
+  @media (max-width: 1000px) {
+    height: 450px;
+
+  }
+
+  @media (max-width: 780px) {
+    height: 410px;
+
+  }
+
+  @media (max-width: 500px) {
+    height: 205px;
+
+  }
+
+  @media (max-width: 480px) {
+    height: 200px !important;
+
+  }
+
+  @media (max-width: 375px) {
+    height: 180px;
+
+  }
+}
+
+.widgetContainerNoDescription {
+  height: 515px;
+  border-radius: 10px;
+  background-color: #333;
+
+  @media (max-width: 1025px) {
+    height: 480px;
+  }
+
+  @media (max-width: 1000px) {
+    height: 450px;
+
+  }
+
+  @media (max-width: 780px) {
+    height: 510px;
+
+  }
+
+  @media (max-width: 500px) {
+    height: 205px;
+
+  }
+
+  @media (max-width: 480px) {
+    height: 200px !important;
+
+  }
+
+  @media (max-width: 375px) {
+    height: 180px;
+
+  }
+}
+
+.iframStyle {
+  border-radius: 10px;
+}
+
+.subText {
+  font-size: 14px;
+}
+
+.maxHeightDescription {
+  max-height: 535px;
+
+  @media (max-width: 550px) {
+    max-height: 295px;
+    align-items: center;
+  }
+}
+
+.maxHeightDescriptionHidden {
+  max-height: 535px;
+
+  @media (max-width: 550px) {
+    max-height: 319px;
+    align-items: center;
+  }
+}
+
+.shareBox1 {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: baseline !important;
+}
+
+.showDescription {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 500px) {
+    gap: 10px;
+    flex-direction: column;
+
+  }
+}

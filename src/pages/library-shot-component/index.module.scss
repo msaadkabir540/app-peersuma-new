@@ -1,0 +1,45 @@
+.container {
+  padding: 0px;
+  height: 100vh;
+  .mainContainer {
+    background-color: black;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto 50px;
+    .name {
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 1.11111;
+      word-break: break-word;
+      margin: 10px 0px;
+    }
+    .description {
+      color: #8498a4;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      line-height: 1.42857;
+      letter-spacing: 0.16px;
+    }
+    .btnContainer {
+      border-top: 0.0625rem solid #b8b8b8;
+      Button {
+        margin: 15px;
+      }
+    }
+  }
+
+  .menuClassNameModalProps{
+    left: 117px;
+    right: 100%;
+    top: 27%;
+  }
+}

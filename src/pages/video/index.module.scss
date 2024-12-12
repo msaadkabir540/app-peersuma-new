@@ -1,0 +1,13 @@
+.videoPlayerViewContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70% 30%;
+  gap: 16px; // Adjust gap as needed
+
+  @media (max-width: 1200px) {
+    // Adjust breakpoint as needed
+    grid-template-columns: 1fr;
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+}

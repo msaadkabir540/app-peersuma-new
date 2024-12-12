@@ -1,0 +1,22 @@
+.container {
+  height: 300px;
+  // border-radius: 8px;
+  background-color: #333;
+
+  @media (max-width: 500px) {
+    height: 215px;
+  }
+
+  @media (max-width: 320px) {
+    height: 150px;
+  }
+
+}
+
+.loadingClass {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

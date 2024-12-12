@@ -1,0 +1,29 @@
+.backDropDiv {
+    position: fixed;
+    inset: 0;
+    background-color: #FFFFFF;
+    z-index: 10;
+    padding: 90px 30px;
+}
+
+.btnCreateClassText {
+    color: #ed1c24 !important;
+}
+
+.btnClass {
+    background-color: white !important;
+    border: 1px solid #ed1c24 !important;
+
+    @media (max-width: 630px) {
+        max-width: none !important;
+    }
+}
+
+.modalContentWrapper {
+    max-width: 650px !important;
+
+    @media (max-width: 660px) {
+        max-width: 90vw !important;
+        padding: 0px !important;
+    }
+}

@@ -1,0 +1,391 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/colors";
+@import "../../../styles/mixin";
+
+.main {
+  height: 50px;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    height: 41px;
+    width: 44px;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-top: 10px;
+
+    @media (max-width: 770px) {
+      display: none;
+    }
+
+    li {
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .img {
+        transition: all 0.2s;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        .img {
+          // margin-left: 8px;
+          transform: rotate(-90deg);
+
+          path {
+            fill: #ed1c24;
+          }
+        }
+
+        .a {
+          color: #ed1c24;
+        }
+
+        .a::before {
+          width: 100px;
+        }
+      }
+
+      .a {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+      }
+    }
+  }
+
+  .btnDiv {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $xs) {
+      gap: 0px;
+    }
+
+    button {
+      border-radius: 50px;
+      height: 35px;
+    }
+
+    .btnText1 {
+      @include font16;
+      border-radius: 50px;
+      background-color: transparent !important;
+      border: 1px solid #ed1c24 !important;
+
+      span {
+        color: #ed1c24 !important;
+      }
+
+      &:hover {
+        background-color: #ed1c24 !important;
+        transition: background-color 0.5s ease;
+
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .logoutDiv {
+    gap: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 30px;
+      height: 30px;
+      // cursor: pointer;
+    }
+  }
+}
+
+.sidebarWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 1;
+  transition: transform 0.3s linear;
+}
+
+.sidebarActive {
+  opacity: 1;
+}
+
+.backDropDiv {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 10;
+  padding: 15px 30px;
+
+  .sideBar {
+    display: flex;
+    gap: 110px;
+    margin-bottom: 20px;
+    align-items: center;
+
+    .backClickClass {
+      width: 30px;
+      height: 30px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .mySelect {
+    display: block;
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8;
+    cursor: pointer !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 25px;
+    margin-top: 10px;
+    max-width: fit-content;
+
+    li {
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .img {
+        transition: all 0.2s;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        .img {
+          // margin-left: 8px;
+          transform: rotate(-90deg);
+
+          path {
+            fill: #ed1c24;
+          }
+        }
+
+        .a {
+          color: #ed1c24;
+        }
+
+        .a::before {
+          width: 100px;
+        }
+      }
+
+      .a {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+      }
+    }
+  }
+}
+
+.path {
+  border-bottom: 3px solid #ed1c24 !important;
+  color: #ed1c24 !important;
+  position: relative;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity all 1.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity all 1.3s ease-in-out;
+}
+
+.iconClass {
+  top: 4px !important;
+}
+
+.imageClass {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.mySelect {
+  cursor: pointer !important;
+  width: 270px !important;
+  font-size: 15px !important;
+  display: block;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.noIcon {
+  display: none !important;
+}
+
+.curserNone {
+  cursor: default !important;
+}
+
+.classNames {
+  color: white !important;
+}
+
+.menuContainer {
+  display: flex;
+  width: 200px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  right: 30px;
+  border-radius: 5px;
+  background: #fff;
+
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+
+  a {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 5px;
+      background: #f2f2f2;
+    }
+  }
+
+  .logoutBox {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 5px;
+      background: #f2f2f2;
+    }
+  }
+
+  .menuClass {
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #b8b8b8;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    // cursor: pointer;
+
+    &:hover {
+      border-radius: 5px;
+      background: #f2f2f2;
+    }
+
+
+    @media (max-width: 600px) {
+      display: flex;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+
+
+
+  .logoutBox {
+    gap: 5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #b8b8b8;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 37px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.toolTipNav {
+  bottom: -30px !important;
+  right: -10px !important;
+  box-shadow: 1px 2px 6px 1px white !important;
+
+  &::before {
+    content: "";
+    bottom: 32px !important;
+    right: 19px !important;
+    transform: rotate(0deg) !important;
+  }
+}

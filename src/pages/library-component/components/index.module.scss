@@ -1,0 +1,132 @@
+.dropVideoContainer {
+  display: flex;
+  height: 124px;
+  padding: var(--N20, 20px);
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  color: #A1A1A1;
+  align-items: center;
+  text-align: center;
+  gap: var(--N10, 10px);
+  align-self: stretch;
+  border-radius: var(--N10, 10px);
+  border: 1px dashed var(--Stroke-Stroke-D, #b8b8b8);
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+.inputCustom {
+  &::placeholder {
+    @media (max-width: 500px) {
+      font-size: 14px !important;
+      font-weight: 300 !important;
+      color: #a1a1a1 !important;
+    }
+  }
+}
+
+
+.labelModal {
+  @media (max-width: 500px) {
+    color: #0F0F0F !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+
+  }
+
+}
+
+.dragElement {
+  color: black !important;
+  cursor: grabbing !important;
+  position: relative !important;
+
+  .dragElementInner {
+    // top: -200px !important;
+    // left: -3000px !important;
+    padding: 16px !important;
+    color: black !important;
+    cursor: grabbing !important;
+    user-select: none !important;
+    position: absolute !important;
+    width: fit-content !important;
+    border-radius: 5px !important;
+    height: fit-content !important;
+    margin: 0px 8px 0px 0px !important;
+    background-color: #030000 !important;
+
+    img {
+      width: 125px !important;
+      height: 100px !important;
+      object-fit: cover !important;
+    }
+  }
+}
+
+
+
+// update media 
+
+
+.transloaditBackground {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 300000 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+// for embed code 
+.modalCustomWrapper {
+  max-width: 627px !important;
+
+  @media (max-width: 500px) {
+    max-width: 90vw !important;
+  }
+}
+
+.widgetLinkDiv {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b8b8b8;
+
+}
+
+.sizeContainer {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0f0f0f;
+}
+
+.activeTab {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: var(--Background-BG-3, #ed1c24);
+}
+
+
+// embed modal classes end 

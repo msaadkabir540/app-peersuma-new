@@ -1,0 +1,20 @@
+.dropVideoContainer {
+    display: flex;
+    height: 124px;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+    color: #A1A1A1;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px dashed var(--Stroke-Stroke-D, #b8b8b8);
+    background: #fff;
+}
+
+
+.scrollbar {
+    scrollbar-width: thin !important;
+}

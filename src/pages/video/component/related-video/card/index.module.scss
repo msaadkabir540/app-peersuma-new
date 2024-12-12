@@ -1,0 +1,161 @@
+.cardContainer {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  flex-direction: row;
+  background: #f8f8f8;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @media (max-width: 480px) {
+    gap: 5px;
+  }
+
+  .cardHeader {
+    overflow: hidden;
+    /* Hide the overflowed content */
+    display: -webkit-box;
+    /* Required for multi-line ellipsis */
+    -webkit-box-orient: vertical;
+    /* Required for multi-line ellipsis */
+    -webkit-line-clamp: 4;
+    /* Limits the text to 4 lines */
+    line-height: 1.5em;
+    /* Adjust the line height if needed */
+    max-height: calc(1.5em * 4);
+    /* Limit to 4 lines */
+    word-wrap: break-word;
+
+
+    .heading {
+      color: #000;
+      font-weight: 500;
+
+      @media (max-width: 480px) {
+        // max-width: 100px;
+      }
+
+
+
+    }
+
+  }
+
+  .imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 100px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+
+  .videoDuration {
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 9px;
+    border-radius: 4px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(26, 46, 59, 0.85);
+
+    @media (max-width: 480px) {
+      bottom: 0px;
+      font-size: 9px;
+    }
+  }
+
+  .playButtonClass {
+    gap: 3px;
+    top: 13px;
+    left: 37%;
+    width: 35px;
+    padding: 4px;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+
+
+    img {
+      object-fit: cover;
+      padding: 0px;
+      width: 100% !important;
+      height: 13px !important;
+    }
+  }
+
+  &:hover {
+    .playButtonClass {
+      display: flex;
+    }
+  }
+}
+
+
+
+.uploadedContainer {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+
+  .uploadedNameClass {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 480px) {
+      gap: 5px;
+    }
+
+    .uploadedheadingClass {
+      font-size: 16px;
+      font-weight: 500;
+
+      @media (max-width: 480px) {
+        font-size: 11px;
+      }
+    }
+
+    .uploadedTimeClass {
+      font-size: 11px;
+
+      @media (max-width: 480px) {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    color: #000;
+    display: flex;
+    border-radius: 50%;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+
+    @media (max-width: 480px) {
+      width: 30px;
+      height: 30px;
+      font-size: 13px;
+    }
+  }
+}

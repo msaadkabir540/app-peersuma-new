@@ -1,0 +1,23 @@
+.main {
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  .text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  img {
+    margin-left: 6px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+}
+
+.selectBoxEllipses {
+  white-space: nowrap;
+  width: 100px !important;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+}

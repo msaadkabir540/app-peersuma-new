@@ -1,0 +1,55 @@
+.headerImage {
+  height: 220px;
+  object-fit: cover;
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  @media (max-width: 640px) {
+    height: 120px;
+  }
+}
+.editBtn {
+  background-color: white;
+  padding: 5px 15px 5px 15px;
+  gap: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.btnCreateClassText {
+  color: #ed1c24 !important;
+}
+
+.btnClass {
+  background-color: white !important;
+  border: 1px solid #ed1c24 !important;
+}
+
+.textClass {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  z-index: 2;
+  position: relative;
+  height: 100%;
+
+  @media (max-width: 660px) {
+    font-size: 20px;
+  }
+}
+.imageClass {
+  position: relative;
+  height: 220px;
+  @media (max-width: 640px) {
+    height: 120px;
+  }
+}

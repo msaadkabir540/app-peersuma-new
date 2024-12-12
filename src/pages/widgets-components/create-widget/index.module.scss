@@ -1,0 +1,13 @@
+.container {
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+
+    .redBorder {
+      border: 1px solid #ed1c24 !important;
+    }
+  }
+}

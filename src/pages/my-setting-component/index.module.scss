@@ -1,0 +1,66 @@
+.btnClassName {
+  border: 1px solid #0f0f0f !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+.inputPlaceHolder {
+  // background-color: #ffffff;
+
+  &::placeholder {
+    @media (max-width: 500px) {
+      font-size: 14px !important;
+      font-weight: 300 !important;
+    }
+  }
+}
+
+.BackClassCustom {
+  bottom: 46px !important;
+  right: 43% !important;
+}
+
+.disableClass {
+  cursor: not-allowed;
+}
+
+.checkBoxCustom {
+  position: absolute;
+  z-index: 99999;
+  width: 20px;
+  height: 21px;
+  opacity: 0;
+}
+
+.radio {
+  @media (max-width: 500px) {
+
+
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+}
+
+.radio::after {
+  @media (max-width: 500px) {
+    top: 1px !important;
+    left: 1px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+  }
+
+}
+
+.radioOuter {
+  @media (max-width: 500px) {
+    align-items: center !important;
+
+    width: 20px !important;
+  }
+}

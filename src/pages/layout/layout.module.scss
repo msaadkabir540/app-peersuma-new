@@ -1,0 +1,33 @@
+@import "../../styles/_breakpoints";
+@import "../../styles/_colors";
+@import "../../styles/_mixin";
+
+.layoutWrapper {
+  width: 100%;
+}
+
+.layoutWrapperInnerClass {
+  margin-top: 85px;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity all 1.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity all 1.3s ease-in-out;
+}
+
+.footerBg {
+  background-image: url(/assets/background/footer-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
+  background-position: bottom;
+
+  @media (max-width: $md) {
+    height: 400px;
+  }
+}

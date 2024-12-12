@@ -1,0 +1,58 @@
+.container {
+  margin-top: 40px;
+
+  title {}
+
+  .field {
+    margin: 20px 0;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+}
+
+.widgetNameField {
+  width: 98%;
+
+  input {
+    border: 1px solid #b8b8b8;
+  }
+}
+
+.customWidgetClass {
+  top: 38px !important;
+}
+
+.widgetLabelClass {
+  color: var(--Fonts-Font-B, #0f0f0f) !important;
+
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.TextAreaField {
+  label {
+    color: var(--Fonts-Font-B, #0f0f0f) !important;
+
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+  }
+}
+
+.WidgetSelectionField {
+  label {
+    color: var(--Fonts-Font-B, #0f0f0f) !important;
+
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+  }
+}

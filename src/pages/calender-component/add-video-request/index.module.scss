@@ -1,0 +1,55 @@
+.modalContentWrapper {
+    max-width: 550px !important;
+
+    @media (max-width: 660px) {
+        max-width: 90vw !important;
+        // padding: 15px !important;
+    }
+}
+
+.borderRed {
+    border: 1px solid #ED1C24 !important;
+
+    @media (max-width: 500px) {
+        max-width: none !important;
+    }
+}
+
+.DatePicker {
+    border: 1px solid var(--Stroke-Stroke-D, #b8b8b8) !important;
+    border-radius: 5px !important;
+
+    width: 100% !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+    &:focus-visible {
+        border: none !important;
+    }
+}
+
+.labelClass {
+    font-size: 16px !important;
+
+    @media (max-width: 500px) {
+        font-size: 14px !important;
+    }
+}
+
+.inputClass::placeholder {
+    margin-top: 0px !important;
+
+    @media (max-width: 500px) {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        color: #a1a1a1 !important;
+    }
+}
+
+.loaderClassUnassigned {
+    width: 50px !important;
+    height: 50px !important;
+
+}

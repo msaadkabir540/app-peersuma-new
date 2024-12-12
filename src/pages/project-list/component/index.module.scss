@@ -1,0 +1,301 @@
+.descriptionElips {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+
+
+.customCheckbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.customCheckbox:checked::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    z-index: 33;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: #000000;
+}
+
+.customCheckbox:checked {
+    background-color: #000000;
+}
+
+.customColorGreen {
+
+    border: 1px solid #0AC433;
+}
+
+.customColorGreen:checked::after {
+    background-color: #0AC433;
+}
+
+.customColorGreen:checked {
+    background-color: #0AC433;
+}
+
+.customColorRed {
+    border: 1px solid #FF3434;
+}
+
+.customColorRed:checked::after {
+    background-color: #FF3434;
+}
+
+.customColorRed:checked {
+    background-color: #FF3434;
+}
+
+
+.transloaditBackground {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 1001 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bodyModal {
+    max-width: 320px !important;
+    padding: 20px !important;
+}
+
+.opacityModal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.deleteModal {
+    text-align: center;
+
+    .deleteHeading {
+        color: #0f0f0f;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
+    }
+
+    .text {
+        color: #0f0f0f;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.redBorder {
+    border: 1px solid #ed1c24 !important;
+}
+
+.maxWidth {
+    max-width: none !important;
+}
+
+
+.scrollbarVisibleClass {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 20px !important;
+        height: 20px !important;
+        background: #ffffff !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b8b8b8 !important;
+        border-radius: 0px !important;
+        border: 5px solid #ffffff !important;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #b8b8b8 !important;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff !important;
+        border-radius: 0px !important;
+    }
+
+    &::-webkit-scrollbar-button {
+        padding: 5px !important;
+        width: 12px !important;
+        margin: 12px !important;
+        height: 12px !important;
+    }
+
+    &::-webkit-scrollbar-button:disabled {
+        display: none !important;
+    }
+
+    &::-webkit-scrollbar-button:single-button {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Vertical buttons */
+    &::-webkit-scrollbar-button:single-button:vertical:decrement {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="0,12 6,0 12,12"/></svg>');
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:increment {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="0,0 6,12 12,0"/></svg>');
+    }
+
+    /* Horizontal buttons */
+    &::-webkit-scrollbar-button:single-button:horizontal:decrement {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="12,0 0,6 12,12"/></svg>');
+    }
+
+    &::-webkit-scrollbar-button:single-button:horizontal:increment {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="0,0 12,6 0,12"/></svg>');
+    }
+}
+
+.videoRequestClass {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    position: relative;
+
+    .dragClass {
+        cursor: grab;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+        display: block;
+
+        @media(max-width: 500px) {
+            display: none;
+
+        }
+    }
+
+    .cardsNameClass {
+        text-decoration: none;
+    }
+
+    .iconClass {
+        display: none;
+        justify-content: end;
+        width: 100%;
+        gap: 10px;
+    }
+
+    &:hover {
+        .iconClass {
+            display: flex;
+        }
+
+        .cardsNameClass {
+            text-decoration: underline;
+        }
+    }
+}
+
+.loadingClass {
+    width: 20px !important;
+    height: 20px !important;
+    border-top: 3px solid #ed1c24 !important;
+    border-left: 3px solid #ed1c24 !important;
+    border-bottom: 3px solid #ed1c24 !important;
+}
+
+
+.dragElementInner .nameClass {
+    margin: 15px 0px 0px 0px;
+
+}
+
+.dragElementInner .divClass {
+    display: flex;
+    flex-direction: column;
+}
+
+.dragElementInner .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 10px;
+}
+
+.dragElement {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    pointer-events: none;
+}
+
+.dragElementInner {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    display: flex;
+    padding: 10px;
+    color: black;
+    cursor: grabbing;
+    user-select: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(156 163 175);
+}
+
+
+.avatarGroup {
+    display: flex;
+    align-items: center;
+    // gap: -10px;
+    position: relative;
+    ;
+    /* Overlap effect */
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* White border */
+    object-fit: cover;
+}
+
+.moreAvatars {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    /* Gray background */
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}

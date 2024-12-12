@@ -1,0 +1,142 @@
+.inventoryContainer {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    position: relative;
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+
+
+    .inventoryText {
+        hyphens: auto;
+        word-break: break-word;
+        overflow-wrap: break-word;
+
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .inventoryText {
+            text-decoration-line: underline;
+        }
+
+
+        .dragClass {
+            transform: scale(1);
+        }
+    }
+
+    .dragClass {
+        width: 100%;
+        max-width: fit-content;
+        opacity: 1;
+        display: block;
+        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+    }
+
+    .inventoryText {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    @media (max-width: 770px) {
+        .dragClass {
+            display: none;
+        }
+    }
+}
+
+.dragElementInner .nameClass {
+    margin: 15px 0px 0px 0px;
+
+}
+
+.dragElementInner .desClass {
+    font-size: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    margin: 15px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+
+
+
+}
+
+.dragElementInner .divClass {
+    display: flex;
+    flex-direction: column;
+}
+
+.dragElement {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    pointer-events: none;
+}
+
+.dragElementInner {
+    width: 300px;
+    padding: 10px;
+    color: black;
+    cursor: grabbing;
+    user-select: none;
+    display: flex;
+    border-radius: 10px;
+}
+
+.dragElementInner img {
+    object-fit: cover;
+    width: 300px;
+    height: 130px;
+}
+
+.selectedInventories {
+    display: none;
+
+    @media (max-width: 770px) {
+        display: block;
+    }
+
+    @media (max-width: 426px) {
+        margin-top: -18px;
+    }
+}
+
+.checkBoxCustom {
+    position: absolute;
+    z-index: 99999;
+    width: 20px;
+    height: 21px;
+    opacity: 0;
+}
+
+.radio {
+    width: 16px !important;
+    height: 16px !important;
+    border-color: #0F0F0F !important;
+
+}
+
+.radio::after {
+    top: 1px !important;
+    left: 1px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: #0F0F0F !important;
+
+}
+
+.radioOuter {
+    width: 20px !important;
+}
+
+.textHyper {
+    word-break: break-word;
+    word-wrap: break-word;
+
+    /* Allows breaking long words to the next line */
+    hyphens: auto;
+
+}

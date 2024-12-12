@@ -1,0 +1,47 @@
+.thumbnailGridHeight {
+  margin: 0px;
+  min-height: 420px;
+  background-color: #333;
+  border-radius: 10px;
+
+  @media (min-width: 1150px) {
+    min-height: 697px;
+  }
+
+  @media (max-width: 1149px) {
+    min-height: 610px;
+
+  }
+
+  @media (max-width: 1025px) {
+    min-height: 554px;
+  }
+
+  @media (max-width: 1000px) {
+    min-height: 525px;
+
+  }
+
+  @media (max-width: 780px) {
+    min-height: 410px;
+
+  }
+
+  @media (max-width: 500px) {
+    min-height: 225px;
+
+  }
+
+  @media (max-width: 425px) {
+    min-height: 216px;
+
+  }
+
+  @media (max-width: 375px) {
+    min-height: 190px;
+  }
+
+  @media (max-width: 320px) {
+    min-height: 157px;
+  }
+}

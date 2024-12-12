@@ -1,0 +1,145 @@
+.activeTab {
+  padding: 0px 20px;
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  gap: 10px;
+  justify-content: center;
+
+  .save {
+    margin-left: 30px;
+    margin-top: 21px;
+  }
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.create {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  height: 61px;
+}
+
+.opacityModal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bodyModal {
+  max-width: 25vw !important;
+}
+
+.deleteModal {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    span {
+      font-weight: bolder;
+      color: #ce4343;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    .delBtn {
+      background-color: #ce4343;
+      color: white;
+      min-width: 100px;
+
+      p {
+        margin: auto;
+      }
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .cancelBtn {
+      background-color: #d3d3d3;
+      min-width: 100px;
+
+      p {
+        margin: auto;
+      }
+    }
+  }
+}
+
+.active {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.tryNowModal {
+  max-width: 627px !important;
+}
+
+.redBorder {
+  border: 1px solid #ed1c24 !important;
+}
+
+.maxWidth {
+  max-width: none !important;
+}
+
+.deleteModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+  .deleteHeading {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+
+
+  .opacityModal {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .text {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.bodyModalWidgets {
+  max-width: 320px !important;
+  padding: 20px !important;
+}

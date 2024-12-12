@@ -1,0 +1,141 @@
+.headerImage {
+  height: 220px;
+  object-fit: cover;
+
+  @media (max-width: 635px) {
+    height: 120px;
+  }
+}
+
+.smallText {
+  @media (max-width: 500px) {
+    font-size: 18px !important;
+  }
+
+  // @media (max-width: 380px) {
+  //   font-size: 0.6rem !important;
+  // }
+}
+
+.editBtn {
+  background-color: white;
+  padding: 5px 15px 5px 15px;
+  gap: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.btnCreateClassText {
+  color: #ed1c24 !important;
+}
+
+.btnClass {
+  background-color: white !important;
+  border: 1px solid #ed1c24 !important;
+}
+
+.iconClass {
+  position: absolute;
+  right: 9px;
+  top: 40px;
+  cursor: pointer;
+  pointer-events: none;
+
+  .img {
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.textClass {
+  color: #fff;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @media (max-width: 660px) {
+    font-size: 20px !important;
+  }
+}
+
+.modalContentWrapper {
+  max-width: 650px !important;
+
+  @media (max-width: 660px) {
+    max-width: 90vw !important;
+    padding: 0px !important;
+  }
+}
+
+.customHeight {
+  height: 50px !important;
+
+  @media (max-width: 660px) {
+    height: 25px !important;
+  }
+}
+
+.statusSelection {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  width: 255px;
+  height: 50px;
+
+  @media (max-width: 660px) {
+    border-radius: 5px;
+    width: 185px !important;
+    height: 28px !important;
+  }
+
+  .selectionCurser {
+    cursor: default !important;
+  }
+}
+
+.selectClass {
+  border-radius: 10px !important;
+  border: 1px solid #B8B8B8 !important;
+  background: #FFF !important;
+
+  @media (max-width: 660px) {
+    border-radius: 5px !important;
+
+  }
+}
+
+.iconClass {
+  @media (max-width: 660px) {
+    top: 8px !important;
+    right: 4px !important;
+
+    .img {
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+}
+
+.loadingClass {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.labelClass {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+
+  @media (max-width: 630px) {
+    font-size: 14px !important;
+  }
+}

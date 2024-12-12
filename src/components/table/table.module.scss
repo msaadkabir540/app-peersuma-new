@@ -1,0 +1,225 @@
+.tableClass {
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 0px;
+  width: 100%;
+  margin-top: 0px;
+  // overflow: auto; // Add overflow here
+
+  @media (max-width: 1100px) {
+    width: 1300px;
+  }
+
+  thead {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    tr {
+      align-items: center;
+
+      th {
+        border-bottom: 1px solid var(--Stroke-Stroke-D, #b8b8b8);
+        background: var(--Background-BG-4, #f8f8f8);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+
+        img {
+          cursor: pointer;
+          // margin-bottom: -4px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--Stroke-Stroke-D, #b8b8b8);
+      background-color: #ffffff;
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      td {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        color: #0f0f0f;
+        overflow-wrap: anywhere;
+
+        &:first-child {}
+
+        &:last-child {
+          border-bottom: none !important;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 0px 13px;
+  width: 100%;
+  // overflow: auto; // Add overflow here
+
+
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.loaderClass {
+  width: 24px;
+  height: 24px;
+  border-color: rgb(0 0 0);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+
+.iconRow {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headingStyle {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  align-items: center !important;
+  justify-content: center;
+}
+
+.TBodyCustom {
+
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+  background: #fff;
+
+  @media (max-width: 1100px) {
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  &::-webkit-scrollbar {
+
+    width: 20px;
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #b8b8b8;
+    border-radius: 0px;
+    border: 5px solid #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b8b8b8;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 0px;
+  }
+
+  &::-webkit-scrollbar-button {
+    padding: 5px !important;
+    width: 12px !important;
+    margin: 12px !important;
+    height: 12px !important;
+    // background: #ffffff !important;
+  }
+
+  &::-webkit-scrollbar-button:vertical:decrement {
+
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="0,12 6,0 12,12"/></svg>') no-repeat center;
+
+  }
+
+  &::-webkit-scrollbar-button:vertical:increment {
+
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black"><polygon points="0,0 6,12 12,0"/></svg>') no-repeat center;
+  }
+}
+
+.headingStyle {
+  display: flex;
+  align-items: center !important;
+  cursor: pointer;
+  padding-left: 20px;
+  font-size: 20px;
+
+  @media (max-width: 635px) {
+    align-items: center !important;
+    font-size: 16px;
+    width: 160px;
+  }
+}
+
+.lastChild {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 20px;
+  justify-content: center !important;
+  background-color: red !important;
+}
+
+.imageClass {
+  img {
+    width: 24px !important;
+    height: 24px !important;
+
+    // @media (max-width: 635px) {
+    //   width: 24px !important;
+    //   height: 15px !important;
+    // }
+  }
+}
+
+.clickableColumn {
+  cursor: pointer;
+}
+
+.backClassCustom {
+  bottom: -41px !important;
+  top: 30px !important;
+
+  &::before {
+    content: "";
+    bottom: 35px !important;
+    transform: rotate(0deg) !important;
+  }
+}

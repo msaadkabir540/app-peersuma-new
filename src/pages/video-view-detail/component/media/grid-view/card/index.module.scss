@@ -1,0 +1,110 @@
+.cardContainer {
+  min-width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+
+
+  .cardHeader {
+    width: 100%;
+    display: flex;
+    padding: 9.897px 15.314px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 5px 5px 0px 0px;
+
+    .heading {
+      font-weight: 500;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-right: 1rem;
+
+      @media (max-width: 450px) {
+        font-size: 14px;
+      }
+    }
+
+    .shortText {
+      cursor: pointer;
+      flex: 0 0 20%;
+      text-align: right;
+    }
+  }
+
+  .imageContainer {
+    z-index: 2;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    background: lightgray 50% / cover no-repeat;
+
+    img {
+      width: 100%;
+      height: 196px;
+      object-fit: cover;
+    }
+
+    .videoDuration {
+      position: absolute;
+      background-color: rgba(26, 46, 59, 0.85);
+      bottom: 5px;
+      right: 5px;
+      padding: 2px 9px;
+      color: #fff;
+      border-radius: 4px;
+      transition: 0.3s ease-in-out;
+      font-size: 13px;
+    }
+  }
+
+  .uploadedContainer {
+    display: flex !important;
+    justify-content: space-between !important;
+
+    align-items: baseline !important;
+    padding: 10px 0px;
+
+    .uploadedNameClass {
+      display: flex;
+      gap: 10px;
+
+      .uploadedheadingClass {
+        font-size: 18px;
+        font-weight: 600;
+
+        @media (max-width: 450px) {
+          font-size: 14px;
+        }
+      }
+
+      .uploadedTimeClass {
+        font-size: 13px;
+
+        @media (max-width: 450px) {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .avatar {
+      background-color: #ed1c24;
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: white;
+
+      @media (max-width: 450px) {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+      }
+    }
+  }
+}

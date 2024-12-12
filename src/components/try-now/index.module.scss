@@ -1,0 +1,164 @@
+.createContainer {
+  padding: 5px;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  @media (max-width: 630px) {
+    gap: 5px;
+  }
+
+  .heading {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0px;
+
+    @media (max-width: 630px) {
+      font-size: 18px;
+    }
+  }
+
+  .buttonClass {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #ed1c24;
+
+    @media (max-width: 480px) {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.tryNowModal {
+  max-width: 40vw !important;
+
+  @media (max-width: 1440px) {
+    max-width: 672px !important;
+  }
+
+  @media (max-width: 780x) {
+    max-width: 90vw !important;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+  gap: 10px;
+}
+
+.nameFields {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100% !important;
+
+  .fields {
+    width: 100% !important;
+
+    .labelClass {
+      margin: 15px 0px 15px 0px;
+
+      label {
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 630px) {
+          font-size: 14px;
+        }
+      }
+
+      input {
+        padding: 10px 5px !important;
+      }
+    }
+  }
+}
+
+.mainClass {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  margin-right: 10px;
+  margin-right: 10px;
+
+  @media (max-width: 480px) {
+    gap: 2px;
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buttonClass {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600px;
+    text-decoration: underline;
+
+    @media (max-width: 480px) {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.disableClass {
+  max-width: 65px !important;
+  background-color: #c2c2c2 !important;
+
+  span {
+    color: #7d7d7d !important;
+
+  }
+}
+
+.w_65px {
+  max-width: 65px !important;
+  background-color: #ed1c24 !important;
+  background-color: #c2c2c2 !important;
+}
+
+.showIcon {
+  div {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 10px;
+  }
+}
+
+.iconClassName {
+  margin-top: 6px !important;
+
+  div {}
+
+  img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+.readyClass {
+  color: #ed1c24;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}

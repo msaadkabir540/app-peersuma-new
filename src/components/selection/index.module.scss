@@ -1,0 +1,75 @@
+@import "../../styles/_breakpoints";
+@import "../../styles/_colors.scss";
+@import "../../styles/_mixin.scss";
+
+.container {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+
+  select {
+    width: 100%;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 5px 5px 5px 0;
+    font-size: 16px;
+    border-radius: 0;
+    height: max-content;
+    border: 1px solid #c9c9c9;
+    background-color: transparent;
+  }
+}
+
+.placeholder {
+  color: $white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+.label {
+  margin-bottom: 4px !important;
+  @include font24;
+  font-weight: 500;
+
+}
+
+.icon {
+  position: absolute;
+  right: 9px;
+  top: 12px;
+  cursor: pointer;
+  pointer-events: none;
+
+  .img {
+    width: 15px;
+    height: 14px;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  @include font12;
+  margin-left: 1px;
+  margin-top: 2px;
+  color: #ff5050;
+}
+
+.errorBorder {
+  border: "1px solid #ff5050" !important;
+}
+
+.pp {
+  padding: 0px !important;
+  line-height: normal !important;
+  color: #ffffff !important;
+  font-size: calc(13px + (15 - 13) * (100vw - 280px) / (2560 - 280)) !important;
+  font-weight: 500 !important;
+  margin-bottom: 0px !important;
+}

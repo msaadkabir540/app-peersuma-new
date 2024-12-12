@@ -1,0 +1,110 @@
+.main {
+  padding: 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.description {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.referenceClass {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+  transition: all 1s;
+  cursor: text;
+
+}
+
+
+.showDescription {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.widgetContainer {
+  background-color: #333;
+  border-radius: 8px;
+  max-width: 1700px;
+}
+
+.height {
+  margin: 0px;
+  min-height: 420px;
+  background-color: #333;
+  border-radius: 10px;
+
+  @media (min-width: 1150px) {
+    min-height: 697px;
+  }
+
+  @media (max-width: 1149px) {
+    min-height: 610px;
+
+  }
+
+  @media (max-width: 1025px) {
+    min-height: 554px;
+  }
+
+  @media (max-width: 1000px) {
+    min-height: 525px;
+
+  }
+
+  @media (max-width: 780px) {
+    min-height: 410px;
+
+  }
+
+  @media (max-width: 500px) {
+    min-height: 225px;
+
+  }
+
+  @media (max-width: 425px) {
+    min-height: 216px;
+
+  }
+
+  @media (max-width: 375px) {
+    min-height: 190px;
+  }
+
+  @media (max-width: 320px) {
+    min-height: 157px;
+  }
+}

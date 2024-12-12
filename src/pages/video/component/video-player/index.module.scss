@@ -1,0 +1,124 @@
+.videoPlayerContainer {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (max-width: 480px) {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+
+  .uploadedContainer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    .uploadedNameClass {
+      display: flex;
+      align-items: center !important;
+      gap: 10px;
+
+      .uploadedheadingClass {
+        font-size: 22px;
+        font-weight: 500;
+
+        @media (max-width: 450px) {
+          font-size: 16px;
+        }
+      }
+
+      .uploadedTimeClass {
+        font-size: 14px;
+
+        @media (max-width: 450px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .avatar {
+      width: 65px;
+      height: 65px;
+      color: #000;
+      display: flex;
+      font-size: 23px;
+      border-radius: 50%;
+      font-weight: 600;
+      align-items: center;
+      justify-content: center;
+      background-color: #e6e6e6;
+
+      @media (max-width: 450px) {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.videoNameClass {
+  overflow: hidden;
+  /* Hide the overflowed content */
+  display: -webkit-box;
+  /* Required for multi-line ellipsis */
+  -webkit-box-orient: vertical;
+  /* Required for multi-line ellipsis */
+  -webkit-line-clamp: 4;
+  /* Limits the text to 4 lines */
+  line-height: 1.5em;
+  /* Adjust the line height if needed */
+  max-height: calc(1.5em * 4);
+  /* Limit to 4 lines */
+  word-wrap: break-word;
+
+  font-size: 24px;
+
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
+
+}
+
+.showDescription {
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 20px;
+  font-weight: 400;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  color: #000;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+/// player component css
+.playerContainer {
+  display: flex;
+  height: 540px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: #000;
+
+  @media (max-width: 480px) {
+    height: 260px;
+  }
+}

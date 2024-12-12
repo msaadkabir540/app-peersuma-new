@@ -1,0 +1,325 @@
+.btnClass {
+  color: black;
+  background-color: white !important;
+
+  border: 1px solid #ed1c24 !important;
+}
+
+.textClass {
+  color: black !important;
+}
+
+.btnClassName {
+  color: black !important;
+  font-size: calc(21px + 2 * (100vw - 280px) / 2280) !important;
+  border-bottom: 2px solid transparent;
+
+  @media (max-width: 630px) {
+    font-size: 16px !important;
+  }
+}
+
+.activeBTnClass {
+  color: #ed1c24 !important;
+  border-bottom: 2px solid #ed1c24;
+}
+
+.btnMedias {
+  padding: 0px !important;
+  border-radius: 10px !important;
+  background-color: transparent !important;
+}
+
+.btnMedias2 {
+  padding: 0px !important;
+  border-radius: 10px !important;
+  background-color: transparent !important;
+
+  @media (max-width: 630px) {
+    display: none !important;
+  }
+}
+
+.imgClass {
+  @media (max-width: 630px) {
+    width: 10px !important;
+    height: 12px !important;
+  }
+}
+
+.hamburgerClass {
+  width: 55px !important;
+  height: 32px !important;
+  padding: 10px 20px !important;
+  gap: 10px !important;
+  border-radius: 20px 0px 0px 20px !important;
+  border: 1px solid #0f0f0f !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+
+  @media (max-width: 630px) {
+    padding: 7.267px 14.534px !important;
+    width: 40px !important;
+    height: 22px !important;
+  }
+}
+
+.gridClass {
+  gap: 10px !important;
+  width: 64px !important;
+  height: 32px !important;
+  border-radius: 0px 20px 20px 0px !important;
+  padding: 10px 20px !important;
+  background-color: transparent !important;
+  border: 1px solid #0f0f0f !important;
+  border-left: none !important;
+
+  @media (max-width: 630px) {
+    padding: 7.267px 14.534px !important;
+    width: 40px !important;
+    height: 22px !important;
+  }
+}
+
+.activeViewClass {
+  background: #daeef4 !important;
+}
+
+.btnCreateClass {
+  border-radius: 10px !important;
+  background-color: transparent !important;
+  border: none !important;
+
+  @media (max-width: 630px) {
+    border-radius: 5px !important;
+    padding: 4px !important;
+    height: 28px !important;
+    width: 145px !important;
+    gap: 5px !important;
+  }
+}
+
+.btnCreateClassAdd {
+  border-radius: 10px !important;
+  background-color: transparent !important;
+  border: none !important;
+
+  @media (max-width: 630px) {
+    padding: 0px !important;
+    height: 0px !important;
+    gap: 0px !important;
+  }
+}
+
+.btnCreateClassInviteUser {
+
+  border-radius: 10px !important;
+  padding: 0px !important;
+  background-color: transparent !important;
+  border: none !important;
+
+  @media (max-width: 630px) {
+    padding: 0px !important;
+    height: 0px !important;
+    gap: 0px !important;
+  }
+}
+
+.headerButton {
+  height: 41px;
+  border-radius: 10px !important;
+
+  @media (max-width: 630px) {
+    padding: 0px !important;
+    height: 0px !important;
+    gap: 0px !important;
+  }
+}
+
+
+.tooltipClass {
+  &::before {
+    right: 785px !important;
+  }
+}
+
+.headerUploadButton {
+  height: 50px;
+  border-radius: 10px !important;
+
+  @media (max-width: 630px) {
+    border-radius: 5px !important;
+    padding: 4px !important;
+    height: 28px !important;
+    width: 116px !important;
+    gap: 5px !important;
+  }
+}
+
+.selectedScenesClassName {
+  background-color: #fff;
+  // padding: 6px 15px !important;
+  border-radius: 5px !important;
+  border: 1px solid #B8B8B8 !important;
+}
+
+.btnText {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  display: block;
+
+  @media (max-width: 630px) {
+    color: #fff;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    display: none;
+  }
+}
+
+.btnCreateClassText {
+  // color: #ed1c24 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  display: block;
+
+  @media (max-width: 630px) {
+    color: #fff;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    display: none;
+
+  }
+}
+
+.loadingClass {
+  width: 20px !important;
+  height: 20px !important;
+  border-top: 3px solid #ed1c24 !important;
+  border-left: 3px solid #ed1c24 !important;
+  border-bottom: 3px solid #ed1c24 !important;
+}
+
+.btnCreateClassText2 {
+  color: #ed1c24 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  display: block;
+
+  @media (max-width: 630px) {
+    color: #fff;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+
+
+  }
+}
+
+.iconClass {
+  width: 20px !important;
+  height: 20px !important;
+
+  @media (max-width: 630px) {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+
+.boxShadow {
+  border-radius: 10px 10px 0px 0px;
+  background: var(--Background-BG-4, #f8f8f8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text {
+  color: #a1a1a1;
+}
+
+.modalContentWrapper {
+  max-width: 672px !important;
+
+  @media (max-width: 660px) {
+    height: 100%;
+    max-height: 475px !important;
+    max-width: 90vw !important;
+    padding: 15px !important;
+  }
+}
+
+.mySelect {
+  // background-color: #fff !important;
+  cursor: pointer !important;
+  // width: 140px;
+
+  // @media (max-width: 660px) {
+  //   width: 130px;
+  // }
+}
+
+.filterClassName {
+  border-radius: var(--N5, 5px);
+  border: 1px solid var(--Stroke-Stroke-D, #B8B8B8);
+  background: var(--Background-BG-2, #FFF);
+}
+
+.filterClassNameMedia {
+  border-radius: var(--N5, 5px);
+  border: 1px solid var(--Stroke-Stroke-D, #B8B8B8);
+  background: var(--Background-BG-2, #FFF);
+  max-width: 150px !important;
+  min-width: 150px !important;
+
+  @media (max-width: 300px) {
+    max-width: fit-content !important;
+    min-width: fit-content !important;
+  }
+}
+
+.labelClass {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+
+  @media (max-width: 630px) {
+    font-size: 14px !important;
+  }
+}
+
+.iconClassSelection {
+  right: 5px !important;
+  top: 9px !important;
+
+  @media (max-width: 630px) {
+    top: 9px !important;
+  }
+}
+
+.DatePicker {
+  border: 1px solid var(--Stroke-Stroke-D, #b8b8b8) !important;
+  border-radius: var(--radius-input-button-radius, 5px) !important;
+
+  width: 100% !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+
+  &:focus-visible {
+    border: none !important;
+  }
+}
+
+.transloaditBackground {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 1001 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

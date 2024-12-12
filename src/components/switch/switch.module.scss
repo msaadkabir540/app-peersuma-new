@@ -1,0 +1,92 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 6px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 17px;
+  left: 2px;
+  top: 3px;
+  background-color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ed1c24;
+  transition: all 0.4s;
+}
+
+input:focus + .slider {
+  box-shadow: none;
+  transition: all 0.4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  left: 13px;
+  transition: all 0.4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.titleClass {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: calc(0px + (12 - 5) * (100vw - 280px) / (2560 - 280));
+  gap: 5px;
+}
+
+.mainClass {
+  display: flex;
+  align-items: center;
+  h6 {
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    margin: 0 5px 0px 5px;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  margin-left: 5px;
+  color: #ed1c24;
+}

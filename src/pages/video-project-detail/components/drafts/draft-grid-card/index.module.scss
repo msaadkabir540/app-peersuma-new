@@ -1,0 +1,108 @@
+.draftPadding {
+  @media (max-width: 500px) {
+    padding: 8px 15px;
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+.btnClass {
+  background-color: transparent !important;
+}
+
+.iconClass {
+  width: 20px !important;
+  height: 20px !important;
+
+  @media (max-width: 500px) {
+    width: 11px !important;
+    height: 11px !important;
+  }
+}
+
+.cardImage {
+  height: 100% !important;
+  width: 100% !important;
+
+  img {
+    background-color: #c3c3c3 !important;
+
+    height: 324px !important;
+    border-radius: 10px !important;
+    object-fit: contain !important;
+
+    @media (max-width: 500px) {
+      border-radius: 5px !important;
+      height: 150px !important;
+    }
+  }
+}
+
+.mobileText {
+  overflow: hidden;
+  /* Ensure overflow is hidden */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  max-width: 190px;
+  text-overflow: ellipsis;
+
+  @media (max-width: 500px) {
+    width: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+  }
+}
+
+.btnCreateClassText {
+  color: #ed1c24 !important;
+}
+
+.btnClass {
+  color: black;
+  background-color: white !important;
+  border: 1px solid #ed1c24 !important;
+}
+
+.loaderClass {
+  width: 18px !important;
+  height: 18px !important;
+
+
+  @media (max-width: 500px) {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+.loaderSaveClass {
+  width: 18px;
+  height: 18px;
+  border-color: rgb(244, 244, 244);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+
+.videoPlayer {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.classModal {
+  @media (max-width: 800px) {
+    max-width: 90vw !important;
+  }
+}
+
+.modalContentWrapper2 {
+  max-width: 500px !important;
+
+  @media (max-width: 500px) {
+    max-width: 90vw !important;
+    min-width: 90vw !important;
+    width: 90vw !important;
+  }
+}
